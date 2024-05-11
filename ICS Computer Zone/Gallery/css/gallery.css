@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,200&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #0c0c0c;
+  }
+  .home-btn {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    height: 40px;
+    margin-left: 100px;
+    color: white;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-btn img {
+    margin-right: 8px;
+    width: 23px;
+    height: 23px;
+  }
+ 
+  
+
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .logo {
+      font-size: 24px;
+    }
+  }
+  
+  
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+.container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+}
+.container img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition:transform 0.5s;
+    transform: scale(1.1); 
+}
+ /* .teacher-day h2 {
+   background-image: url('https://img.freepik.com/free-vector/teachers-day-card_24908-56506.jpg?w=740&t=st=1693809571~exp=1693810171~hmac=81e862b6e452a380c78a5f5363fe5c6ef40e2f9d788c8b205c269fc930b5605e');
+   background-repeat: no-repeat;
+   font-size: 2.8rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   background-size: cover;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   font-weight: 700;
+}  */
+
+/* CSS to apply different colors to each letter */
+.rainbow-text {
+  font-size: 50px; /* Adjust the font size as needed */
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff0000,#008000,#0000ff, #ff00ff,  #0000ff, #800080 );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 4s linear infinite;
+
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rainbow-text {
+    font-size: 20px;
+  }
+}
